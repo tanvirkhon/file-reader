@@ -5,9 +5,6 @@ from dotenv import load_dotenv
 from pandasai.llm.openai import OpenAI
 from pandasai import PandasAI
 
-
-
-
 ### OpenAI API Key
 load_dotenv()
 
@@ -23,6 +20,7 @@ def chat_with_csv(df, prompt):
 
 st.set_page_config(page_title='Pricema AI', page_icon="🤖", layout="wide")
 
+# Styling for the page
 st.title('Chatbot CSV')
 hide_st_style = """
             <style>
